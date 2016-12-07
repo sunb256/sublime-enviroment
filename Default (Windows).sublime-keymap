@@ -1,0 +1,152 @@
+[
+  // shift + F10でboudkeyで割り当て一覧が見れる
+  // View - Show(Console)でsublime.log_commands(True)とすると入力をロギングできる
+  // 確認したらsublime.log_commands(False)にしておく
+
+  // --------------------------
+  // - メニュー系
+  // --------------------------
+  // ctrl+rでサイドバー選択
+  { "keys": ["ctrl+r"], "command": "focus_side_bar" },
+
+  // WordWrap toggle
+  { "keys": ["ctrl+1"], "command": "toggle_setting", "args": {"setting": "word_wrap"} },
+
+
+  // --------------------------
+  // - グループ (Sidebar Tab)
+  // --------------------------
+  // グループを作成
+  { "keys": ["ctrl+k", "ctrl+p"], "command": "new_pane" , "args": {"move": false} },
+
+  // グループを閉じる
+  { "keys": ["ctrl+q"], "command": "close_pane" },
+
+  // 次のグループ 
+  { "keys": ["shift+tab"], "command": "focus_neighboring_group" },
+ 
+
+  // --------------------------
+  // - 移動系
+  // --------------------------
+  // alt+左で戻る
+  { "keys": ["alt+left"], "command": "jump_back" },
+
+  // alt+右で進む
+  { "keys": ["alt+right"], "command": "jump_forward" },
+
+  // 戻る
+  { "keys": ["ctrl+f12"], "command": "jump_back" },
+
+  // 行頭･行末移動
+  { "keys": ["ctrl+shift+]"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+  { "keys": ["ctrl+shift+["], "command": "move_to", "args": {"to": "bol", "extend": false} },
+
+  // --------------------------
+  // - 選択系
+  // --------------------------
+  // 矩形選択 (ctrl+enterでキャンセルできる)
+  { "keys": ["ctrl+-"], "command": "select_lines", "args": {"forward": true} },
+  { "keys": ["ctrl+shift+-"], "command": "select_lines", "args": {"forward": false} },
+
+
+  // 一括ワード選択
+  { "keys": ["ctrl+g"], "command": "find_all_under" },
+
+  // word選択
+  { "keys": ["ctrl+shift+w"], "command": "find_under_expand" },
+
+  // インデント選択
+  { "keys": ["ctrl+7"], "command": "expand_selection" , "args": {"to": "indentation"} },
+
+  // スコープ選択
+  { "keys": ["ctrl+8"], "command": "expand_selection" , "args": {"to": "scope"} },
+
+  // 選択行をMulti Colum選択 
+  { "keys": ["ctrl+k", "ctrl+l"], "command": "split_selection_into_lines" },
+
+
+  // --------------------------
+  // - 編集系
+  // --------------------------
+  // コメントアウト
+  { "keys": ["ctrl+k", "ctrl+c"], "command": "toggle_comment", "args": {"block": "false"} },
+  { "keys": ["ctrl+k", "ctrl+u"], "command": "toggle_comment", "args": {"block": "true"} },
+
+  // indent
+  { "keys": ["ctrl+]"], "command": "indent" },
+  { "keys": ["ctrl+["], "command": "unindent" },
+
+  // build 
+  { "keys": ["ctrl+shift+b"], "command": "build"},
+  { "keys": ["f5"], "command": "build"},
+
+  // duplicate copy
+  { "keys": ["ctrl+shift+c"], "command": "duplicate_line" },
+
+
+  // --------------------------
+  // - プラグイン設定
+  // --------------------------
+  // alignTab
+  {"keys": ["ctrl+8"], "command": "align_tab"} ,
+
+  // sublime bookmark 
+  {"keys": ["ctrl+k", "ctrl+k"], "command": "sublime_bookmark", "args": {"type": "add"}  } ,
+
+  // terminal
+  { "keys": ["ctrl+t", "ctrl+t"], "command": "open_terminal"},
+
+  // filter line
+  { "keys": ["ctrl+k", "ctrl+f"], "command": "prompt_filter_to_lines"},
+
+  // clickable URL (キーが衝突するので再定義)
+  { "keys": ["alt+enter"], "command": "open_url_under_cursor" },
+  { "keys": ["ctrl+alt+enter"], "command": "replace_all", "args": {"close_panel": true},
+     "context": [{"key": "panel", "operand": "replace"}, {"key": "panel_has_focus"}]
+  },
+
+  // sublime code intel
+  { "keys": ["ctrl+space"], "command": "code_intel_auto_complete" },
+  { "keys": ["f12"], "command": "goto_python_definition"},
+
+  // surround
+  { "keys": ["ctrl+i", "ctrl+s"], "command": "surround_selection"},
+  { "keys": ["ctrl+i", "ctrl+c"], "command": "surround_change"},
+  { "keys": ["ctrl+i", "ctrl+d"], "command": "surround_delete"},
+
+  // multi edit util
+  { "keys": ["ctrl+e", "ctrl+e"], "command": "normalize_region_ends" },
+
+  // side bar separator
+  { "keys": ["ctrl+shift+alt+s"], "command": "sidebar_separator" },
+
+  // expand region
+  { "keys": ["ctrl+shift+l"], "command": "expand_region" },
+  { "keys": ["ctrlr+u"], "command": "expand_region", "args": {"undo": true}, "context": [{ "key": "expand_region_soft_undo" }]  }
+
+
+  // --------------------------
+  // - my plugin
+  // --------------------------
+  // // fold toggle
+  // { "keys": ["ctrl+m", "ctrl+m"], "command": "my_toggle_fold" },
+
+  // // build pain toggle
+  // { "keys": ["ctrl+b"],  "command": "my_toggle_build_pain" },
+
+  // // 連番
+  // {"keys": ["ctrl+9"], "command": "my_sequence_number"} ,
+
+  // // open folder
+  // { "keys": ["ctrl+t", "ctrl+o"], "command": "my_open_folder" },
+
+  //undo column line
+  // { "keys": ["ctrl+shift+alt+-"], "command": "my_undo_line" },
+
+  // // quick open
+  // { "keys": ["ctrl+shift+alt+p"], "command": "my_quick_open" },
+
+]
+
+

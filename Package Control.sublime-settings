@@ -1,0 +1,62 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AlignTab",
+		"ApacheConf.tmLanguage",
+		"AutoHotkey",
+		"BoundKeys",
+		"BracketHighlighter",
+		"Clickable URLs",
+		"ColorPicker",
+		"ExpandRegion",
+		"F#",
+		"Filter Lines",
+		"GitGutter",
+		"IMESupport",
+		"Indent XML",
+		"INI",
+		"Jinja2",
+		"Jump Along Indent",
+		"Markdown Extended",
+		"Monokai Extended",
+		"MultiEditUtils",
+		"OmniMarkupPreviewer",
+		"Open Folder",
+		"OpenFolderCurrentFile",
+		"OpenScad",
+		"Package Control",
+		"QuickFileOpen",
+		"SequenceNumber",
+		"SideBarFolders",
+		"SidebarSeparator",
+		"Status Bar File Size",
+		"Sublime Bookmarks",
+		"SublimeCodeIntel",
+		"SublimeHighlight",
+		"Sublimerge Pro",
+		"SuperNavigator",
+		"Surround",
+		"Table Editor",
+		"Terminal",
+		"Text Pastry",
+		"ToggleBuildPain",
+		"ToggleFold",
+		"UndoColumnLine",
+		"VBDotNet",
+		"VBScript"
+	],
+	"repositories":
+	[
+		"https://github.com/n1k0/SublimeHighlight/tree/python3",
+		"https://github.com/sunb256/ToggleFold",
+		"https://github.com/sunb256/ToggleBuildPain",
+		"https://github.com/sunb256/SequenceNumber",
+		"https://github.com/sunb256/OpenFolderCurrentFile",
+		"https://github.com/sunb256/UndoColumnLine",
+		"https://github.com/sunb256/QuickFileOpen"
+	]
+}
